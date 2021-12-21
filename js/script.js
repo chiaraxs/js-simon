@@ -42,19 +42,20 @@ setTimeout (function() {
 }, 3000);
 
 // 7. setto timer 4 s -> dopo la scomparsa dei numeri, aggiungo prompt
-setTimeout (function() {
-userNumber = prompt('Inserisci qui i numeri!');
-}, 4000);
+// setTimeout (function() {
+// userNumber = prompt('Inserisci qui i numeri!');
+// }, 4000);
 
 // 8. verifico e valido numeri 
-
 let userNumber = [];
+let guessed = [];
 
-while(numbers.length < 5) {
-    let userNumber = randomNumber;
-    if (userNumber.includes(randomNumber)){
-        userNumber.push(randomNumber)
+
+setTimeout (function() {
+    for(let i = 0; i < 5; i++) {
+       let userNumber = parseInt(prompt('Inserisci qui i numeri'));
+       if (randomNumber.includes(userNumber)){
+          guessed.push(userNumber)
+        }
     }
-
-    console.log(userNumber)
-}
+ }, 4000);
