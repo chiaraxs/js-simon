@@ -22,7 +22,7 @@ while(numbers.length < 5) {
     if (!numbers.includes(randomNumber)){
         numbers.push(randomNumber)
     }
-}
+};
 
 console.log(numbers) // debug controllo in console
 
@@ -41,21 +41,20 @@ setTimeout (function() {
     outputHtml.innerHTML = '';
 }, 3000);
 
-// 7. setto timer 4 s -> dopo la scomparsa dei numeri, aggiungo prompt
-// setTimeout (function() {
-// userNumber = prompt('Inserisci qui i numeri!');
-// }, 4000);
-
+// 7. setto timer 4 s -> dopo la scomparsa dei numeri, aggiungo 5 prompt
 // 8. verifico e valido numeri 
-let userNumber = [];
-let guessed = [];
+// creo array vuoti 
+let userNumber = []; // numeri inseriti dall'utente
+let guessed = []; // numeri indovinati
+
 
 
 setTimeout (function() {
     for(let i = 0; i < 5; i++) {
        let userNumber = parseInt(prompt('Inserisci qui i numeri'));
-       if (randomNumber.includes(userNumber)){
+       if (numbers.includes(userNumber)){
           guessed.push(userNumber)
         }
     }
+    outputHtml.innerHTML = `<div> Complimenti, hai indovinato ${guessed.length} numeri. Eccoli: ${guessed} </div>`;
  }, 4000);
