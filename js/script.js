@@ -37,10 +37,24 @@ setTimeout (function () {
 }, 1000);
 
 // 6. setto timer a 3 s per far sparire i numeri e far ricomparire il div 'output' vuoto
-// alla scomparsa dei numeri, aggiungo prompt
 setTimeout (function() {
     outputHtml.innerHTML = '';
-    prompt('Inserisci qui i numeri!');
 }, 3000);
 
+// 7. setto timer 4 s -> dopo la scomparsa dei numeri, aggiungo prompt
+setTimeout (function() {
+userNumber = prompt('Inserisci qui i numeri!');
+}, 4000);
 
+// 8. verifico e valido numeri 
+
+let userNumber = [];
+
+while(numbers.length < 5) {
+    let userNumber = randomNumber;
+    if (userNumber.includes(randomNumber)){
+        userNumber.push(randomNumber)
+    }
+
+    console.log(userNumber)
+}
