@@ -1,0 +1,23 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-input{
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    
+}
+
+.user-form{
+    width: 200px;
+    height: 50px;
+    margin-top: 200px;
+}
+
+.button-validator{
+    margin-top: 200px;
+}   

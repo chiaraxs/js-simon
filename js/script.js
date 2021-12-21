@@ -4,6 +4,7 @@
 // uno alla volta, i numeri che ha visto precedentemente, tramite il prompt().
 // Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 
+let outputHtml = document.querySelector('.hide-numbers');
 
 // 1. creo funzione per creazione numeri random da restituire in array vuoto 'numbers'
 function getRandom(min, max) {
@@ -27,3 +28,19 @@ console.log(numbers) // debug controllo in console
 
 // 4. creo alert che mostra numeri random
 alert('Inizia il gioco! Memorizza i seguenti numeri:' + ' ' + numbers);
+
+// // 5. setto il timer a 3 s per far sparire alert da sostituire con div .hide-numbers
+// // in cui stampo i numeri da memorizzare. 
+// // dopo 3 s
+
+// setTimeout (hideNumbers, 3000);
+
+// function hideNumbers() {
+    
+    
+// }
+
+
+
+
+
